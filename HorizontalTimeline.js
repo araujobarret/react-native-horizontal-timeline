@@ -36,12 +36,18 @@ class HorizontalTimeline extends Component {
     if (!this.state.days) { return null; }
     // TODO: grab each info of the day and put
     const days = this.state.days.map(d => (
-      <View key={`col${d.date}`} style={[ styles.day, { width }]}>
+      <View key={`col${d.date}`} style={[ d.date % 2 === 0 ? styles.day : styles.dayElevated, { width }]}>
         <View style={styles.dayUpper}>
-          <Text style={styles.title}>{`${this.getDayOfTheWeek(d.currentDate.getDay())} ${d.date}`}</Text>
+          <View style={styles.textContainer}>
+            <Text style={styles.title}>{ `${d.date}` }</Text>
+            <Text style={styles.subTitle}>{`${this.getDayOfTheWeek(d.currentDate.getDay())}`}</Text>
+          </View>
         </View>
+
+        <View style={styles.lineContainer} />
+
         <View style={styles.dayBottom}>
-          <Text>{ ' ' }</Text>
+          <Text style={styles.dayInfo}>{ `information`.slice(0, 40) }</Text>
         </View>
       </View>
     ));
@@ -49,9 +55,9 @@ class HorizontalTimeline extends Component {
   }
 
   render() {
-    const { backgroundColor, height } = this.props;
+    const { height } = this.props;
     return (
-      <ScrollView horizontal contentContainerStyle={{ height, backgroundColor }}>
+      <ScrollView horizontal contentContainerStyle={{ height }}>
         { this.renderDays() }
       </ScrollView>
     );
@@ -60,7 +66,6 @@ class HorizontalTimeline extends Component {
 
 HorizontalTimeline.propTypes = {
   date: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
   dayColor: PropTypes.string,
   color: PropTypes.string,
   height: PropTypes.number,
@@ -68,7 +73,7 @@ HorizontalTimeline.propTypes = {
 }
 
 HorizontalTimeline.defaultProps = {
-  backgroundColor: '#ccc',
+  backgroundColor: '#fefefe',
   dayColor: '#fafbfc',
   color: '#4C626D',
   height: 160,
@@ -77,19 +82,48 @@ HorizontalTimeline.defaultProps = {
 
 const styles = StyleSheet.create({
   day: {
-
+    backgroundColor: 'lightgray',
+    marginBottom: 5
+  },
+  dayElevated: {
+    backgroundColor: 'lightgray',
+    elevation: 5,
+    marginBottom: 5
   },
   dayUpper: {
-    backgroundColor: 'pink',
-    flex: 1
+    backgroundColor: '#fefefe',
+    flex: 1,
+    flexDirection: 'row'
   },
   dayBottom: {
-    backgroundColor: 'lightgreen',
-    flex: 1
+    backgroundColor: '#fefefe',
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'center'
+  },
+  lineContainer: {
+
+  },
+  textContainer: {
+    flexDirection: 'row',
+    alignSelf: 'center'
   },
   title: {
-    fontSize: 22,
-    margin: 8
+    fontSize: 26,
+    flex: 1,
+    alignSelf: 'center',
+    textAlign: 'right',
+    marginRight: 12
+  },
+  subTitle: {
+    fontSize: 16,
+    flex: 1,
+    alignSelf: 'flex-end'
+  },
+  dayInfo: {
+    color: '#f52b6f',
+    fontSize: 14,
+    alignSelf: 'center'
   }
 });
 
