@@ -1,4 +1,5 @@
-
+/* eslint-disable global-require, react/forbid-prop-types */
+/* eslint class-methods-use-this: ["error", { "exceptMethods": ["getDayOfTheWeek"] }] */
 import React, { Component } from 'react';
 import { StyleSheet, Image, ScrollView, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
@@ -6,14 +7,32 @@ import PropTypes from 'prop-types';
 class HorizontalTimeline extends Component {
   constructor(props) {
     super(props);
+
     const date = new Date(props.date);
     const days = [];
-    console.log(props);
     const timelineDate = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-    for (let i = 1; i <= Number(timelineDate.getDate()); i += 1) {
-      days.push({ date: i, currentDate: new Date(date.getFullYear(), date.getMonth(), i) });
+
+    const keys = props.data ? Object.keys(props.data) : null;
+
+    if (keys) {
+      for (let i = 1; i <= Number(timelineDate.getDate()); i += 1) {
+        if (props.data[i]) {
+          days.push({
+            date: i,
+            currentDate: new Date(date.getFullYear(), date.getMonth(), i),
+            marked: props.data[i].marked,
+            info: props.data[i].info ? props.data[i].info : null
+          });
+        } else {
+          days.push({ date: i, currentDate: new Date(date.getFullYear(), date.getMonth(), i) });
+        }
+      }
+    } else {
+      for (let i = 1; i <= Number(timelineDate.getDate()); i += 1) {
+        days.push({ date: i, currentDate: new Date(date.getFullYear(), date.getMonth(), i) });
+      }
     }
-    console.log('days', days);
+
     this.state = { days, date };
   }
 
@@ -30,13 +49,25 @@ class HorizontalTimeline extends Component {
     }
   }
 
+  renderDotImage (day) {
+    if (day.marked) {
+      const { width, height } = this.props;
+      return (
+        <Image
+          source={require('./assets/dot_purple.png')}
+          style={[styles.dotImage, { left: (width / 2) - 8, top: (height / 2) - 14 }]}
+        />
+      );
+    }
+    return null;
+  }
+
   renderDays() {
-    // TODO: implement the this.date.getDay() translation
     const { width } = this.props;
     if (!this.state.days) { return null; }
-    // TODO: grab each info of the day and put
+
     const days = this.state.days.map(d => (
-      <View key={`col${d.date}`} style={[ d.date % 2 === 0 ? styles.day : styles.dayElevated, { width }]}>
+      <View key={`col${d.date}`} style={[ !d.marked ? styles.day : styles.dayElevated, { width }]}>
         <View style={styles.dayUpper}>
           <View style={styles.textContainer}>
             <Text style={styles.title}>{ `${d.date}` }</Text>
@@ -46,8 +77,10 @@ class HorizontalTimeline extends Component {
 
         <View style={styles.lineContainer} />
 
+        { this.renderDotImage(d) }
+
         <View style={styles.dayBottom}>
-          <Text style={styles.dayInfo}>{ `information`.slice(0, 40) }</Text>
+          <Text style={styles.dayInfo}>{ d.info ? d.info.slice(0, 40) : '' }</Text>
         </View>
       </View>
     ));
@@ -66,15 +99,14 @@ class HorizontalTimeline extends Component {
 
 HorizontalTimeline.propTypes = {
   date: PropTypes.string.isRequired,
-  dayColor: PropTypes.string,
-  color: PropTypes.string,
+  data: PropTypes.object,
   height: PropTypes.number,
   width: PropTypes.number
 }
 
 HorizontalTimeline.defaultProps = {
   backgroundColor: '#fefefe',
-  dayColor: '#fafbfc',
+  data: null,
   color: '#4C626D',
   height: 160,
   width: 120
@@ -83,12 +115,12 @@ HorizontalTimeline.defaultProps = {
 const styles = StyleSheet.create({
   day: {
     backgroundColor: 'lightgray',
-    marginBottom: 5
+    marginVertical: 5
   },
   dayElevated: {
     backgroundColor: 'lightgray',
     elevation: 5,
-    marginBottom: 5
+    marginVertical: 5
   },
   dayUpper: {
     backgroundColor: '#fefefe',
@@ -102,7 +134,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   lineContainer: {
-
+    height: 3,
+    borderTopWidth: 3,
+    borderColor: '#edeff3'
   },
   textContainer: {
     flexDirection: 'row',
@@ -121,9 +155,15 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
   dayInfo: {
-    color: '#f52b6f',
+    color: '#ac78fb',
     fontSize: 14,
     alignSelf: 'center'
+  },
+  dotImage: {
+    position: 'absolute',
+    width: 16,
+    height: 16,
+    zIndex: 99
   }
 });
 

@@ -6,4 +6,5 @@
 __tests__
 node_modules
 Examples
+package-lock.json
 yarn.lock

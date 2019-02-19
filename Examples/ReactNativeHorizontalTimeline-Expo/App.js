@@ -9,7 +9,7 @@ let styles;
 
 class App extends React.Component {
   static navigationOptions = {
-    title: 'Horizonta Timeline'
+    title: 'Horizontal Timeline'
   };
 
   render() {

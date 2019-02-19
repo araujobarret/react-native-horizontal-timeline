@@ -2,8 +2,6 @@ import React, { PureComponent } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { HorizontalTimeline } from 'react-native-horizontal-timeline';
 
-let styles;
-
 class HorizontalTimelineDefault extends PureComponent {
   static navigationOptions = {
     title: 'Right position'
@@ -12,16 +10,23 @@ class HorizontalTimelineDefault extends PureComponent {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <HorizontalTimeline date={new Date().toISOString()} />
+        <HorizontalTimeline
+          date={new Date().toISOString()}
+          data={{
+             1: { marked: true, info: 'Some info' },
+             5: { marked: true, info: 'More info' },
+          }}
+        />
       </SafeAreaView>
     );
   }
 }
 
-styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    paddingTop: 10
   }
 });
 
