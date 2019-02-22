@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, TouchableOpacity } from 'react-native';
 import { StackNavigator } from 'react-navigation';

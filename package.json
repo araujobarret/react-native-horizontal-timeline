@@ -35,23 +35,21 @@
   },
   "license": "MIT",
   "dependencies": {
-    "react-native": "0.58.0",
-    "prop-types": "15.5.10",
-    "react": "16.3.1"
+    "prop-types": "15.5.10"
   },
   "devDependencies": {
-    "babel-jest": "^24.1.0",
+    "@babel/runtime": "^7.0.0-beta.55",
+    "babel-preset-expo": "^5.0.0",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16.3": "^1.6.1",
+    "enzyme-adapter-react-16": "^1.9.1",
     "enzyme-to-json": "^3.3.5",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "^0.52.0",
-    "react-dom": "^16.8.2"
+    "react-dom": "^16.8.3",
+    "react-native": "0.57.0",
+    "react": "16.5.0"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>setup/setupEnzyme.js",
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    }
+    "setupFilesAfterEnv": ["<rootDir>setup/setupEnzyme.js"]
   }
 }
