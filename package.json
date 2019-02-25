@@ -67,6 +67,8 @@
     "testPathIgnorePatterns": [
       "<rootDir>/Examples/"
     ],
-    "setupFiles": ["<rootDir>setup/setupEnzyme.js"]
+    "setupFiles": [
+      "<rootDir>setup/setupEnzyme.js"
+    ]
   }
 }
