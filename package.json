@@ -35,21 +35,38 @@
   },
   "license": "MIT",
   "dependencies": {
-    "prop-types": "15.5.10"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0-beta.55",
-    "babel-preset-expo": "^5.0.0",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "enzyme-to-json": "^3.3.5",
-    "jest": "^24.1.0",
-    "metro-react-native-babel-preset": "^0.52.0",
-    "react-dom": "^16.8.3",
-    "react-native": "0.57.0",
-    "react": "16.5.0"
+    "babel-jest": "^23.6.0",
+    "babel-preset-react-native": "^4.0.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.6.0",
+    "jest-react-native": "^18.0.0",
+    "jest-serializer-enzyme": "^1.0.0",
+    "react": "16.3.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.4.1",
+    "react-native": "0.55.4",
+    "react-test-renderer": "16.3.1"
   },
   "jest": {
-    "setupFilesAfterEnv": ["<rootDir>setup/setupEnzyme.js"]
+    "preset": "react-native",
+    "testRegex": "/__tests__/.*\\.test\\.jsx?$",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|native-base|react-navigation|react-native-fabric)"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/setup/assetsTransformer.js"
+    },
+    "modulePathIgnorePatterns": [
+      "<rootDir>/Examples/"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/Examples/"
+    ],
+    "setupFiles": ["<rootDir>setup/setupEnzyme.js"]
   }
 }

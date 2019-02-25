@@ -120,7 +120,11 @@ const styles = StyleSheet.create({
   dayElevated: {
     backgroundColor: 'lightgray',
     elevation: 5,
-    marginVertical: 5
+    marginVertical: 5,
+    shadowOffset: { width: 1, height: 2},
+    shadowColor: "#000000",
+    shadowRadius: 3,
+    shadowOpacity: 0.3
   },
   dayUpper: {
     backgroundColor: '#fefefe',

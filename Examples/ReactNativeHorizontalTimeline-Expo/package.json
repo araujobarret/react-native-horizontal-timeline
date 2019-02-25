@@ -2,12 +2,10 @@
   "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "dependencies": {
-    "expo": "^30.0.0",
-    "react": "16.5.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
-    "react-navigation": "^1.5.11"
-  },
-  "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "expo": "^27.0.0",
+    "prop-types": "^15.6.0",
+    "react-navigation": "^1.5.11",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz"
   }
 }
