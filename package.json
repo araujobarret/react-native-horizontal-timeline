@@ -1,7 +1,7 @@
 {
   "name": "react-native-horizontal-timeline",
   "version": "0.0.1",
-  "description": "A horizontal scrollable timeline within the days of the month",
+  "description": "A horizontal scrollable timeline with month days",
   "typings": "index.d.ts",
   "main": "index.js",
   "scripts": {
