@@ -4,7 +4,7 @@ import { HorizontalTimeline } from 'react-native-horizontal-timeline';
 
 class HorizontalTimelineDefault extends PureComponent {
   static navigationOptions = {
-    title: 'Right position'
+    title: 'Default Timeline with data props'
   };
 
   render() {

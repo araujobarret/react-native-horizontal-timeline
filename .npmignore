@@ -3,6 +3,9 @@
 .editorconfig
 .eslintrc
 __tests__
+docs
+coverage
+setup
 node_modules
 Examples
 package-lock.json
