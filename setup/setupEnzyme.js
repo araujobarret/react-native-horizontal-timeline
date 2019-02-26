@@ -3,7 +3,7 @@ import React from 'react';
 jest.mock('react-native', () => {
   const createMockComponent = (name) => {
     const mockedComponent = ({ children }) => (
-      <div>{children}</div>
+      <div>{ children }</div>
     );
     mockedComponent.displayName = name;
     return mockedComponent;

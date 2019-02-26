@@ -21,41 +21,58 @@ class HorizontalTimeline extends Component {
             date: i,
             currentDate: new Date(date.getFullYear(), date.getMonth(), i),
             marked: props.data[i].marked,
-            info: props.data[i].info ? props.data[i].info : null
+            info: props.data[i].info ? props.data[i].info : null,
           });
         } else {
-          days.push({ date: i, currentDate: new Date(date.getFullYear(), date.getMonth(), i) });
+          days.push({
+            date: i,
+            currentDate: new Date(date.getFullYear(), date.getMonth(), i),
+          });
         }
       }
     } else {
       for (let i = 1; i <= Number(timelineDate.getDate()); i += 1) {
-        days.push({ date: i, currentDate: new Date(date.getFullYear(), date.getMonth(), i) });
+        days.push({
+          date: i,
+          currentDate: new Date(date.getFullYear(), date.getMonth(), i),
+        });
       }
     }
 
-    this.state = { days, date };
+    this.state = { days };
   }
 
   getDayOfTheWeek(day) {
     switch (day) {
-      case 0: return "Sun";
-      case 1: return "Mon";
-      case 2: return "Tues";
-      case 3: return "Wed";
-      case 4: return "Thurs";
-      case 5: return "Fri";
-      case 6: return "Sat";
-      default: return "";
+      case 0:
+        return 'Sun';
+      case 1:
+        return 'Mon';
+      case 2:
+        return 'Tue';
+      case 3:
+        return 'Wed';
+      case 4:
+        return 'Thu';
+      case 5:
+        return 'Fri';
+      case 6:
+        return 'Sat';
+      default:
+        return '';
     }
   }
 
-  renderDotImage (day) {
+  renderDotImage(day) {
     if (day.marked) {
       const { width, height } = this.props;
       return (
         <Image
           source={require('./assets/dot_purple.png')}
-          style={[styles.dotImage, { left: (width / 2) - 8, top: (height / 2) - 14 }]}
+          style={[
+            styles.dotImage,
+            { left: width / 2 - 8, top: height / 2 - 14 },
+          ]}
         />
       );
     }
@@ -63,24 +80,33 @@ class HorizontalTimeline extends Component {
   }
 
   renderDays() {
-    const { width } = this.props;
-    if (!this.state.days) { return null; }
+    const { width, backgroundColor, color } = this.props;
+    if (!this.state.days) {
+      return null;
+    }
 
     const days = this.state.days.map(d => (
-      <View key={`col${d.date}`} style={[ !d.marked ? styles.day : styles.dayElevated, { width }]}>
-        <View style={styles.dayUpper}>
+      <View
+        key={`col${d.date}`}
+        style={[!d.marked ? styles.day : styles.dayElevated, { width }]}
+      >
+        <View style={[styles.dayUpper, { backgroundColor }]}>
           <View style={styles.textContainer}>
-            <Text style={styles.title}>{ `${d.date}` }</Text>
-            <Text style={styles.subTitle}>{`${this.getDayOfTheWeek(d.currentDate.getDay())}`}</Text>
+            <Text style={styles.title}>{`${d.date}`}</Text>
+            <Text style={styles.subTitle}>{`${this.getDayOfTheWeek(
+              d.currentDate.getDay(),
+            )}`}</Text>
           </View>
         </View>
 
         <View style={styles.lineContainer} />
 
-        { this.renderDotImage(d) }
+        {this.renderDotImage(d)}
 
-        <View style={styles.dayBottom}>
-          <Text style={styles.dayInfo}>{ d.info ? d.info.slice(0, 40) : '' }</Text>
+        <View style={[styles.dayBottom, { backgroundColor }]}>
+          <Text style={[styles.dayInfo, { color }]}>
+            {d.info ? d.info.slice(0, 40) : ''}
+          </Text>
         </View>
       </View>
     ));
@@ -91,84 +117,83 @@ class HorizontalTimeline extends Component {
     const { height } = this.props;
     return (
       <ScrollView horizontal contentContainerStyle={{ height }}>
-        { this.renderDays() }
+        {this.renderDays()}
       </ScrollView>
     );
   }
 }
 
 HorizontalTimeline.propTypes = {
+  backgroundColor: PropTypes.string,
+  color: PropTypes.string,
   date: PropTypes.string.isRequired,
   data: PropTypes.object,
   height: PropTypes.number,
-  width: PropTypes.number
-}
+  width: PropTypes.number,
+};
 
 HorizontalTimeline.defaultProps = {
   backgroundColor: '#fefefe',
   data: null,
-  color: '#4C626D',
+  color: '#ac78fb',
   height: 160,
-  width: 120
-}
+  width: 120,
+};
 
 const styles = StyleSheet.create({
   day: {
     backgroundColor: 'lightgray',
-    marginVertical: 5
+    marginVertical: 5,
   },
   dayElevated: {
     backgroundColor: 'lightgray',
     elevation: 5,
     marginVertical: 5,
-    shadowOffset: { width: 1, height: 2},
-    shadowColor: "#000000",
+    shadowOffset: { width: 1, height: 2 },
+    shadowColor: '#000000',
     shadowRadius: 3,
-    shadowOpacity: 0.3
+    shadowOpacity: 0.3,
   },
   dayUpper: {
-    backgroundColor: '#fefefe',
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   dayBottom: {
-    backgroundColor: '#fefefe',
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   lineContainer: {
     height: 3,
     borderTopWidth: 3,
-    borderColor: '#edeff3'
+    borderColor: '#edeff3',
   },
   textContainer: {
     flexDirection: 'row',
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   title: {
     fontSize: 26,
     flex: 1,
     alignSelf: 'center',
     textAlign: 'right',
-    marginRight: 12
+    marginRight: 12,
   },
   subTitle: {
     fontSize: 16,
     flex: 1,
-    alignSelf: 'flex-end'
+    alignSelf: 'flex-end',
   },
   dayInfo: {
-    color: '#ac78fb',
     fontSize: 14,
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   dotImage: {
     position: 'absolute',
     width: 16,
     height: 16,
-    zIndex: 99
-  }
+    zIndex: 99,
+  },
 });
 
 export default HorizontalTimeline;

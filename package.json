@@ -5,8 +5,11 @@
   "typings": "index.d.ts",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "jest": "./node_modules/.bin/jest",
+    "jest:watch": "npm run jest -- --watch",
+    "lint": "./node_modules/.bin/eslint ./*.js",
+    "format": "./node_modules/.bin/prettier --write {,__tests__}*.js",
+    "test": "npm run lint && npm run jest"
   },
   "keywords": [
     "react-native",
@@ -38,14 +41,23 @@
     "prop-types": "^15.5.10"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-preset-react-native": "^4.0.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^23.6.0",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^23.0.0",
     "jest-react-native": "^18.0.0",
     "jest-serializer-enzyme": "^1.0.0",
+    "prettier": "^1.16.4",
     "react": "16.3.1",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.4.1",
@@ -58,9 +70,6 @@
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|native-base|react-navigation|react-native-fabric)"
     ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/setup/assetsTransformer.js"
-    },
     "modulePathIgnorePatterns": [
       "<rootDir>/Examples/"
     ],
