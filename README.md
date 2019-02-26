@@ -5,7 +5,7 @@ A horizontal scrollable timeline with month days
 ## Installation
 
 ```
-npm i react-native-floating-action --save
+npm i react-native-horizontal-timeline --save
 ```
 
 ## How to use it
