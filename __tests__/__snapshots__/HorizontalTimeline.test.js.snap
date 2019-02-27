@@ -51,7 +51,7 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
     <Image
       source={
         Object {
-          "testUri": "../../../assets/dot_purple.png",
+          "process": [Function],
         }
       }
       style={
@@ -130,7 +130,7 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
     <Image
       source={
         Object {
-          "testUri": "../../../assets/dot_purple.png",
+          "process": [Function],
         }
       }
       style={

@@ -81,9 +81,6 @@ class HorizontalTimeline extends Component {
 
   renderDays() {
     const { width, backgroundColor, color } = this.props;
-    if (!this.state.days) {
-      return null;
-    }
 
     const days = this.state.days.map(d => (
       <View

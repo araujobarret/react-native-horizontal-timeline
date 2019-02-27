@@ -5,7 +5,7 @@
   "typings": "index.d.ts",
   "main": "index.js",
   "scripts": {
-    "jest": "./node_modules/.bin/jest",
+    "jest": "./node_modules/.bin/jest --coverage --collectCoverageFrom=*.js",
     "jest:watch": "npm run jest -- --watch",
     "lint": "./node_modules/.bin/eslint ./*.js",
     "format": "./node_modules/.bin/prettier --write {,__tests__}*.js",
@@ -79,6 +79,9 @@
     ],
     "setupFiles": [
       "<rootDir>setup/setupEnzyme.js"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/setup/transformAssets.js"
+    }
   }
 }
