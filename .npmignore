@@ -1,4 +1,5 @@
 *.log
+.circleci
 .babelrc
 .editorconfig
 .eslintrc
