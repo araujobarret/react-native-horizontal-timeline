@@ -22,7 +22,7 @@ import { HorizontalTimeline } from 'react-native-horizontal-timeline';
 <HorizontalTimeline date={new Date().toISOString()} />
 ```
 
-![demo](docs/demo.gif)
+![demo](docs/demo_0.2.gif)
 
 #### Properties
 
