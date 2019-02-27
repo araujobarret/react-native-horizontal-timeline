@@ -3,6 +3,7 @@ import { StyleSheet, Text, SafeAreaView, TouchableOpacity } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 import HorizontalTimelineDefault from './screens/HorizontalTimelineDefault';
+import HorizontalTimelineCustomColors from './screens/HorizontalTimelineCustomColors';
 
 let styles;
 
@@ -20,6 +21,13 @@ class App extends React.Component {
         >
           <Text>Horizontal Timeline Default</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.item}
+          onPress={() => this.props.navigation.navigate('HorizontalTimelineCustomColors')} // eslint-disable-line
+        >
+          <Text>Horizontal Timeline Custom Colors</Text>
+        </TouchableOpacity>
       </SafeAreaView>
     );
   }
@@ -31,6 +39,9 @@ export default StackNavigator({
   },
   HorizontalTimelineDefault: {
     screen: HorizontalTimelineDefault
+  },
+  HorizontalTimelineCustomColors: {
+    screen: HorizontalTimelineCustomColors
   }
 });
 

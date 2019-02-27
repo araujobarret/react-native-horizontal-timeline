@@ -34,12 +34,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           1
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -113,12 +127,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           2
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -192,12 +220,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           3
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -253,12 +295,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           4
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -314,12 +370,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           5
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -375,12 +445,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           6
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -436,12 +520,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           7
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -497,12 +595,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           8
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -558,12 +670,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           9
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -619,12 +745,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           10
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -680,12 +820,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           11
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -741,12 +895,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           12
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -802,12 +970,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           13
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -863,12 +1045,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           14
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -924,12 +1120,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           15
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -985,12 +1195,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           16
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -1046,12 +1270,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           17
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -1107,12 +1345,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           18
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -1168,12 +1420,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           19
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -1229,12 +1495,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           20
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -1290,12 +1570,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           21
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -1351,12 +1645,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           22
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -1412,12 +1720,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           23
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -1473,12 +1795,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           24
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -1534,12 +1870,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           25
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -1595,12 +1945,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           26
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -1656,12 +2020,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           27
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -1717,12 +2095,26 @@ exports[`HorizontalTimeline should render correctly with just data, date props 1
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           28
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -1790,12 +2182,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           1
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -1851,12 +2257,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           2
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -1912,12 +2332,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           3
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -1973,12 +2407,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           4
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -2034,12 +2482,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           5
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -2095,12 +2557,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           6
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -2156,12 +2632,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           7
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -2217,12 +2707,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           8
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -2278,12 +2782,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           9
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -2339,12 +2857,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           10
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -2400,12 +2932,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           11
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -2461,12 +3007,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           12
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -2522,12 +3082,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           13
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -2583,12 +3157,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           14
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -2644,12 +3232,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           15
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -2705,12 +3307,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           16
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -2766,12 +3382,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           17
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -2827,12 +3457,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           18
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -2888,12 +3532,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           19
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -2949,12 +3607,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           20
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -3010,12 +3682,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           21
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>
@@ -3071,12 +3757,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           22
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Fri
         </Text>
@@ -3132,12 +3832,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           23
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sat
         </Text>
@@ -3193,12 +3907,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           24
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Sun
         </Text>
@@ -3254,12 +3982,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           25
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Mon
         </Text>
@@ -3315,12 +4057,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           26
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Tue
         </Text>
@@ -3376,12 +4132,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           27
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Wed
         </Text>
@@ -3437,12 +4207,26 @@ exports[`HorizontalTimeline should render correctly with just date props 1`] = `
         style="textContainer"
       >
         <Text
-          style="title"
+          style={
+            Array [
+              "title",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           28
         </Text>
         <Text
-          style="subTitle"
+          style={
+            Array [
+              "subTitle",
+              Object {
+                "color": "#ac78fb",
+              },
+            ]
+          }
         >
           Thu
         </Text>

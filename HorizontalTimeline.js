@@ -89,8 +89,8 @@ class HorizontalTimeline extends Component {
       >
         <View style={[styles.dayUpper, { backgroundColor }]}>
           <View style={styles.textContainer}>
-            <Text style={styles.title}>{`${d.date}`}</Text>
-            <Text style={styles.subTitle}>
+            <Text style={[ styles.title, { color }]}>{`${d.date}`}</Text>
+            <Text style={[ styles.subTitle, { color }]}>
               {`${this.getDayOfTheWeek(d.currentDate.getDay())}`}
             </Text>
           </View>
